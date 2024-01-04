@@ -22,3 +22,19 @@ body {
   
 }
 
+.card-images > img {
+  margin-left: 50px;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+
+
+
+.rating {
+  padding-left: 50px;
+  font-size: smaller;
+}
+
+.grey {
+  color: gray;
+}
