@@ -3,43 +3,28 @@ import './App.css'
 import { NavBar } from './navbar'
 import { Grid } from './hero'
 import { Card } from './Card'
+import carddata from './carddata'
 
 function App (){
+  const cardElements = carddata.map(data => {
+    return <Card img={data.img} 
+    rating={data.rating}
+    country={data.country}
+    title={data.title}
+    price={data.price}/>
+  })
   return (
     <>
       <NavBar />
       <Grid />
       <div className='cards'>
-        <Card 
-        img="../src/images/swimmer.jpeg"
-        rating="5.0"
-        country= "USA"
-        title="Life lessons from Kopie Zohan"
-        price="from $135" />
-
-        <Card img="../src/images/swimmer.jpeg"
-        rating="5.0"
-        country= "USA"
-        title="Life lessons from Issifu Banda"
-        price="from $165" />
-
-        <Card img="../src/images/swimmer.jpeg"
-        rating="5.0"
-        country= "USA"
-        title="Life lessons from Damian Clurge"
-        price="from $535" />
-
-        <Card img="../src/images/swimmer.jpeg"
-        rating="5.0"
-        country= "USA"
-        title="Life lessons from Kwame Darius"
-        price="from $1135" />
-
+        {cardElements}
+        
       </div>
-      
-      
 
     </>
+    
+    
     
   )
 }
