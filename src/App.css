@@ -22,10 +22,11 @@ body {
   
 }
 
-.card-images > img {
+.card-images > div >img {
   margin-left: 50px;
   margin-top: 80px;
   border-radius: 10px;
+  
 }
 
 
@@ -37,4 +38,8 @@ body {
 
 .grey {
   color: gray;
+}
+
+.cards {
+  display: flex;
 }
